@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="icon" type="image/png" href="/svg/Ellipse 4.png" />
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <img src="svg/Ellipse 4.png" alt="Logo" class="logo" />
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="about.html">About us</a></li>
+            <div class="cart-icon">
+              <a href="cart.html">
+                <img src="svg/shopping-cart.svg" alt="Cart" />
+              </a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="checkout">
+        <h1>Checkout</h1>
+        <form>
+          <div class="form-group">
+            <label for="shipping-address">Shipping Address</label>
+            <div class="form-control">
+              <input
+                type="text"
+                id="shipping-address"
+                value="4, Ajaneloko street, Obalende, Ikeja, Lagos state"
+                readonly
+              />
+              <a href="#">CHANGE</a>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-info">Contact info</label>
+            <div class="form-control">
+              <input
+                type="text"
+                id="contact-info"
+                value="+234 567 8933 444"
+                readonly
+              />
+              <a href="#">CHANGE</a>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="delivery-type">Delivery Type</label>
+            <select id="delivery-type">
+              <option value="express">Express</option>
+              <option value="standard">Standard</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="payment-method">Payment method</label>
+            <select id="payment-method">
+              <option value="paypal">Paypal</option>
+              <option value="credit-card">Credit Card</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Proceed to payment</button>
+        </form>
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-item">
+            <span>Subtotal</span>
+            <span>$35</span>
+          </div>
+          <div class="summary-item">
+            <span>Shipping</span>
+            <span>$4.5</span>
+          </div>
+          <div class="summary-item">
+            <span>Total</span>
+            <span>$39.5</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="newsletter">
+          <h3>Subscribe to our newsletter</h3>
+          <form>
+            <input type="email" placeholder="Email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">Main</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Opportunities</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#">Gowns</a></li>
+              <li><a href="#">Hoodies</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Crop Tops</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Social Media</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">+922 366 346 333</a></li>
+              <li><a href="#">+211 354 234 343</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>

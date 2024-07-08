@@ -1,0 +1,406 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(/svg/Rectangle\ 8.jpg);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav .logo img {
+  width: 60px;
+  border-radius: 60%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cart a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 10px;
+}
+
+.hero {
+  background: url("/svg/Rectangle\ 9.pn") no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/svg/Rectangle\ 9@2x.jpg") no-repeat center center/cover;
+  z-index: 1;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 50px;
+  width: 400px;
+  margin-top: -60px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.feature-item {
+  text-align: center;
+  max-width: 150px;
+}
+
+.feature-item i {
+  font-size: 2rem;
+  color: #ff7043;
+  margin-bottom: 10px;
+}
+
+.products {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  width: calc(25% - 40px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.products button {
+  border-radius: 10px;
+  margin-bottom: 5px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  color: #9e6924;
+}
+
+footer {
+  background-color: #e08c39;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #9e6924;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.footer-column {
+  width: 20%;
+  color: white;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-column h4 {
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  line-height: 2;
+  color: white;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 80%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/*CART*/
+
+.cart {
+  margin-left: 299px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.fa-shopping-cart {
+  color: white;
+  font-style: normal;
+  font-size: 20px;
+  margin-left: -80px;
+}
+
+.cart-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-page h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.cart-item h3 {
+  font-size: 1.2em;
+}
+
+.cart-item-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-options label {
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+.cart-item-options select,
+.quantity-controls {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-controls button {
+  background: #ccc;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity-controls input {
+  width: 40px;
+  text-align: center;
+}
+
+.cart-item-price {
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+.checkout-btn {
+  background: #8b4513;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Base styles for desktop */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  nav, footer {
+      display: block;
+      text-align: center;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+      font-size: 16px;
+  }
+
+  .container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  nav, footer {
+      display: flex;
+      justify-content: space-around;
+  }
+}
