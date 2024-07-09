@@ -241,7 +241,6 @@ footer {
 /*CART*/
 
 .cart {
-  margin-left: 299px;
   display: flex;
   align-items: center;
   justify-content: space-between;
